@@ -1,9 +1,90 @@
-h1 {
-  background-color: black;
-  color: #fff;
+body {
   font-family: "Poppins", sans-serif;
-  font-style: normal;
+  background-color: #272044;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/james-r-adelaide_convention_center_cropped.jpg");
+
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("../images/james-r-adelaide_convention_center.jpg"); */
+
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("../images/james-r-adelaide_oval.jpg");
+   */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("../images/jonathan-xu-haighs.jpg");
+   */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("../images/slava-abramovitch-adelaide_night.jpg"); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
   font-size: 96px;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 32px;
+  padding: 16px 32px;
+  color: #272044;
+  background-color: #fff;
+  border: none;
+  border-radius: 1px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1070px) {
+  header {
+    padding: 60px 0;
+    background-position: center;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
