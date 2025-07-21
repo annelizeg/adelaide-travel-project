@@ -17,6 +17,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 60px 0;
 }
 
 header {
@@ -81,6 +82,10 @@ header a {
   border-radius: 1px;
 }
 
+main {
+  background-color: #fff;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
@@ -104,7 +109,6 @@ footer {
   background-position: bottom;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 100px 0;
 }
 
 footer h3 {
