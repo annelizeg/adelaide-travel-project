@@ -3,6 +3,22 @@ body {
   background-color: #272044;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 20px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/james-r-adelaide_convention_center_cropped.jpg");
@@ -65,9 +81,69 @@ header a {
   border-radius: 1px;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/james-r-adelaide_oval.jpg");
+
+  /* background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/jonathan-xu-haighs.jpg"); */
+
+  /* background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/slava-abramovitch-adelaide_night.jpg"); */
+
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.attributes,
+.attributes p {
+  font-size: 10px;
+  font-style: italic;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.attributes li {
+  list-style: inside;
+  margin-left: 20px;
 }
 
 @media (max-width: 1070px) {
