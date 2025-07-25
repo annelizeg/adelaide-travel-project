@@ -30,6 +30,10 @@ body {
   margin: 30px 0;
 }
 
+.card-header.grid {
+  grid-gap: 0px;
+}
+
 .card-body {
   padding: 30px;
 }
@@ -52,8 +56,14 @@ body {
   letter-spacing: 3px;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 .img-responsive {
   max-width: 100%;
+  /* width: 100%; */
   max-height: 630px;
   margin: auto;
   display: block;
