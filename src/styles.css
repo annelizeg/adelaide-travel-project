@@ -17,8 +17,39 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-narrow-first {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.card {
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 20px;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #462cb3;
+  padding: 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .img-responsive {
@@ -27,10 +58,19 @@ body {
   margin: auto;
   display: block;
 }
+
+.text-centered {
+  text-align: center;
+}
+
 section {
-  max-width: 1200px;
+  /* max-width: 100%; */
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 100px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 header {
@@ -113,6 +153,22 @@ main h2 {
 main h3 {
   color: #272044;
   font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main h4 {
+  color: #272044;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main h5 {
+  color: #272044;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
