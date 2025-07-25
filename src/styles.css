@@ -91,8 +91,8 @@ header {
     url("../images/james-r-adelaide_convention_center.jpg"); */
 
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
-    url("../images/james-r-adelaide_oval.jpg");
-   */
+    url("../images/james-r-adelaide_oval.jpg"); */
+
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
     url("../images/jonathan-xu-haighs.jpg");
    */
@@ -257,7 +257,17 @@ footer a {
   margin-left: 20px;
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1200px) {
+  section.secondary .grid.grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+
+  main h3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
     background-position: center;
@@ -271,17 +281,35 @@ footer a {
     font-size: 20px;
   }
 
-  header h3 {
-    font-size: 12px;
+  main h3 {
+    font-size: 28px;
+  }
+
+  header h3,
+  main h4,
+  footer h3 {
+    font-size: 20px;
+  }
+
+  main p,
+  footer p {
+    font-size: 14px;
   }
 
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+  .card-header.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+  }
 
-  .img-responsive {
+  /* .img-responsive {
     max-height: 450px;
+  } */
+
+  section.primary img {
+    display: none;
   }
 
   section {
