@@ -61,6 +61,31 @@ body {
   aspect-ratio: 1/1;
 }
 
+.instagram-responsive-embeds {
+  width: 100%; /* Make the container take full available width */
+  margin: 30px auto 0; /* Center the embed if max-width is applied */
+  position: relative; /* Essential for positioning the iframe inside */
+  padding-bottom: 127%; /* This creates the aspect ratio. Adjust as needed. */
+  height: 0; /* Collapse the container's height initially */
+  overflow: hidden; /* Hide any overflowing content */
+  max-width: 540px; /* Optional: Match Instagram's suggested max-width if desired */
+}
+
+.instagram-responsive-embeds iframe,
+.instagram-responsive-embeds .instagram-media {
+  position: absolute; /* Position the iframe absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100% !important; /* Force width to 100% of the container */
+  height: 100% !important; /* Force height to 100% of the container */
+  /* Remove any inline styles for width/height that might conflict */
+  min-width: 200px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .img-responsive {
   max-width: 100%;
   /* width: 100%; */
@@ -307,6 +332,9 @@ footer a {
   /* .img-responsive {
     max-height: 450px;
   } */
+  .instagram-responsive-embeds {
+    padding-bottom: 640px;
+  }
 
   section.primary img {
     display: none;
@@ -314,5 +342,11 @@ footer a {
 
   section {
     padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .instagram-responsive-embeds {
+    padding-bottom: 120%;
   }
 }
