@@ -218,6 +218,10 @@ main p {
   opacity: 0.7;
 }
 
+section.primary img {
+  filter: drop-shadow(16px 16px 20px #272044);
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
